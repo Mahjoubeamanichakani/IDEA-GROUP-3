@@ -1,29 +1,12 @@
 
-Employment Inequality in Canada: Immigration and visible minority
-
-Research Group
-
-Group 3:
-
-Mahjoube AmaniChakani
-
-Nkasiobi Hossanna Nwobi
-
-Maya Krishnan
-
-Ogochukwu Onyeso
-
-Research Question:
-
 How does immigration status contribute to employment inequality in Canada, and how do race, language proficiency, gender, and education level shape this relationship?
 
-Data Sources:
+**Data Sources:**
 
 2021 Census Public Use Microdata File (PUMF)
 
-We are using the 2021 Census Individuals PUMF dataset to analyze employment inequality in Canada. The dataset provides microdata on immigration status, employment, education, and demographic variables.
 
-Files in this Repository
+**Files in this Repository:**
 
 User Guide and Codebook: 2021 Census Individuals PUMF User Guide_v2.pdf (Documentation on variables and dataset structure)
 
