@@ -3,7 +3,7 @@ clear
 clear matrix 
 
 /**********************************************
-Insert your own data direction instead on (...)
+Insert your own data direction instead of (...)
 ***********************************************/
 
 cd "..."
