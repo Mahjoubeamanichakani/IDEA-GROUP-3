@@ -15,4 +15,5 @@ Official Descriptive Statistics: cen_2021_immigration.pdf (Summary statistics fo
 Raw Data: https://mcgill-my.sharepoint.com/:f:/g/personal/mahjoube_amanichakani_mail_mcgill_ca/EmsDyjo0EOxGhwLYNqPe7YkB9N8nTxIgytLJ6Vg_hTqtGw?e=RbDWx1
 
 Variables of Interest: Variables of interest.docx (List of selected variables for analysis)
+
 Recode and rename : Recode.do
