@@ -17,3 +17,4 @@ Raw Data: https://mcgill-my.sharepoint.com/:f:/g/personal/mahjoube_amanichakani_
 Variables of Interest: Variables of interest.docx (List of selected variables for analysis)
 
 Recode and rename : Recode.do
+Initial Cleaning and weights :Cleaning and Weights.do
