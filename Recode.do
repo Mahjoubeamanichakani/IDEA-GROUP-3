@@ -374,4 +374,48 @@ recode vismin ( 88=.)
  label values wrkact wrkact
  label values yrim yrim
 
+
+******************************************
+* Assign descriptive labels to variables
+******************************************
+label variable vismin "Visible minority status"
+label variable pr "Province or territory of current residence"
+label variable pob "Place of birth"
+label variable noc21 "Occupation Major Group (based on NOC 2021)"
+label variable lwmostno "Language used most often at work - First write-in component"
+label variable lwmostfr "Language used most often at work - French component"
+label variable lwmosten "Language used most often at work - English component"
+label variable liprogtype "Type of French program attended in Canada by residents outside Quebec"
+label variable lico_at "Low-income status based on Low-Income Cut-Offs (after-tax)"
+label variable lico_bt "Low-income status based on Low-Income Cut-Offs (before-tax)"
+label variable lfact "Labour force status - Detailed"
+label variable kol "Knowledge of official languages"
+label variable jobperm "Job permanency"
+label variable immstat "Immigrant status"
+label variable immcat5 "Admission category - Summary"
+label variable hlregno "Other language(s) spoken regularly at home - First write-in component"
+label variable hlregfr "Other language(s) spoken regularly at home - French component"
+label variable hlregen "Other language(s) spoken regularly at home - English component"
+label variable hlmostno "Language spoken most often at home - First write-in component"
+label variable hlmostfr "Language spoken most often at home - French component"
+label variable hlmosten "Language spoken most often at home - English component"
+label variable hdgree "Highest certificate, diploma or degree"
+label variable genstat "Generation status - Detailed"
+label variable gender "Gender of person (binary)"
+label variable fptwk "Full-time or part-time weeks worked in 2020"
+label variable fol "First official language spoken"
+*label variable efsize "Economic family size"
+label variable ethder "Ethnic or cultural origin: Derived single and selected multiple ethnic or cultural origins"
+label variable dpgrsum "Population group"
+label variable citizen "Citizenship status and type - Summary"
+label variable citoth "Other country of citizenship"
+label variable cow "Class of worker (derived)"
+label variable cfstat "Household living arrangements of person, simple version"
+label variable attsch "School attendance - Detailed"
+label variable ageimm "Age at immigration"
+label variable agegrp "Age group"
+label variable weight "Individuals weighting factor"
+
+
+
 save `dta_name', replace
