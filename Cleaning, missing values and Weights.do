@@ -30,7 +30,7 @@ drop if immstat==.
 ****Employment Status (derived variable)
 gen employed = .
 replace employed = 1 if lfact == 1 | lfact == 2  
-replace employed = 0 if inlist(lfact, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13,14) 
+replace employed = 0 if inlist(lfact, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13) 
 
 label define employed_lbl 0 "Unemployed" 1 "Employed"
 label values employed employed_lbl
