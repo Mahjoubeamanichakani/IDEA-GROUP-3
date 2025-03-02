@@ -57,7 +57,7 @@ drop if underemployed==.
 ****Binary: White vs. Non-White(derived variable)
 gen non_white = .
 replace non_white = 0 if dpgrsum == 1  
-replace non_white = 1 if inlist(dpgrsum, 2,3,4,5,6,7,8,9,10,11,12,13) 
+replace non_white = 1 if inlist(dpgrsum, 2,3,4,5,6,7,8,9,10,11,12,13,14) 
 
 label define non_white_lbl 0 "White" 1 "Non-White"
 label values non_white non_white_lbl
@@ -95,8 +95,8 @@ drop if hdgree==.
 *or(derived variable)
 
 gen uni_educated = .
-replace uni_educated = 1 if inlist(hdgree, 9, 10, 11, 12, 13) // Bachelor's or higher
-replace uni_educated = 0 if inlist(hdgree, 1,2,3,4,5,6,7,8) // No university degree
+replace uni_educated = 1 if inlist(hdgree, 8,9, 10, 11, 12, 13) // Bachelor's or higher
+replace uni_educated = 0 if inlist(hdgree, 1,2,3,4,5,6,7) // No university degree
 
 label define uni_educated_lbl 0 "No University Degree" 1 "University Degree"
 label values uni_educated uni_educated_lbl
