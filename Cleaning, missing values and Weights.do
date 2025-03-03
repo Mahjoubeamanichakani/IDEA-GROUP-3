@@ -30,7 +30,7 @@ drop if immstat==.
 ****Employment Status (derived variable)
 gen employed = .
 replace employed = 1 if lfact == 1 | lfact == 2  
-replace employed = 0 if inlist(lfact, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13) 
+replace employed = 0 if inlist(lfact, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13,14) 
 
 label define employed_lbl 0 "Unemployed" 1 "Employed"
 label values employed employed_lbl
@@ -39,20 +39,25 @@ ta employed,m
 *Drop missing data on Employment Status
 drop if employed==.
 
-****Employed part-time or temporary jobs as underemployed(derived variable)
+****Job stability and permenant jobs(derived variable)
+tab jobperm,m
+gen Job_permanency = .
+replace Job_permanency=0 if jobperm==1 | jobperm==3
+replace Job_permanency=1 if jobperm==2
 
-gen underemployed = .
-replace underemployed = 1 if fptwk == 2  
-replace underemployed = 1 if jobperm == 3  
-replace underemployed = 0 if fptwk == 1 & jobperm == 2   
+label define Job_permanency 0 "Non permanent position" 1 "Permanent position"
+label values Job_permanency Job_permanency
+ta Job_permanency,m
 
-label define underemployed_lbl 0 "Fully Employed" 1 "Underemployed"
-label values underemployed underemployed_lbl
-ta underemployed
+****Low income status(derived variable from lico_bt)
+tab lico_bt,m
+gen Low_income = .
+replace Low_income=0 if lico_bt==1 
+replace Low_income=1 if lico_bt==1
 
-*Drop missing data on underemployed
+label define Low_income 0 "Not in low income" 1 "In low income"
+label values Low_income Low_income
 
-drop if underemployed==.
 
 ****Binary: White vs. Non-White(derived variable)
 gen non_white = .
