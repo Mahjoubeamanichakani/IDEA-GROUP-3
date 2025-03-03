@@ -108,8 +108,7 @@ label define fol 1 "English" 2 "French" 3 "English and French" 4 "Neither Englis
 recode fptwk ( 8 9 =.)
 
 *sex at birth
- label define gender 
-    1 "woman+" 2 "man+"
+ label define gender 1 "woman" 2 "man"
 
 	*"Generation status" refers to whether or not the person or the person's parents were born in Canada.
 label define genstat 1 "First generation, respondent born outside Canada" 2 "Second generation, respondent born in Canada, both parents born outside Canada" 3 "Second generation, respondent born in Canada, one parent born outside Canada and one parent born in Canada" 4 "Third generation or more, respondent born in Canada, both parents born in Canada" 8 "Not available"
