@@ -80,14 +80,13 @@ drop if kol==.
 
 *or(derived variable)
 gen lang_proficient = .
-replace lang_proficient = 1 if inlist(kol, 1, 2, 3) // Speaks English or French
-replace lang_proficient = 0 if kol == 4  // Neither English nor French
+replace lang_proficient = 1 if inlist(kol, 1, 2, 3) * Speaks English or French
+replace lang_proficient = 0 if kol == 4  * Neither English nor French
 
 label define lang_proficient_lbl 0 "Not Proficient" 1 "Proficient"
 label values lang_proficient lang_proficient_lbl
 
-*Drop missing data on Language Binary
-drop if lang_proficient==.
+
 
 
 ****Education Level( from raw data-no need to change)
@@ -107,8 +106,6 @@ label define uni_educated_lbl 0 "No University Degree" 1 "University Degree"
 label values uni_educated uni_educated_lbl
 ta uni_educated
 
-*Drop missing data on uni_educated
-drop if uni_educated==.
 
 ****Provinces( from raw data-no need to change)
 tab pr,m
