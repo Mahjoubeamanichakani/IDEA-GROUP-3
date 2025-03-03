@@ -148,6 +148,23 @@ svyset [pw=weight]
 
 svy: proportion employed immstat gender visible_minority agegrp pr uni_educated lang_proficient
 
+**********************
+*Changing variables name
+************************
+rename vismin Visibleminority
+rename pr Province
+rename pob Place_of_birth
+rename noc21 Occupation_Major_Group
+rename lico_at Lowe_Income_Status_after_tax
+rename lico_bt Lowe_Income_Status_before_tax
+rename lfact Labour_force_status
+rename kol Knowledge_of_lang
+rename jobperm Jobpermanency
+rename immstat Immigrant_status
+rename immcat5 Admission_category
+rename hdgree Highest_certificate
+rename genstat Generation_status
+rename cow Class_of_worker
 
 
 save "....dta", replace
